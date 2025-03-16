@@ -36,6 +36,5 @@ with urllib.request.urlopen(url) as response:
         
         df.to_csv(output_file, index=False)
         print(f"Dados escritos em: {output_file}")
-        print(pd.read_csv(output_file))
     else:
         print(f"Erro na chamada: {response.status}")
