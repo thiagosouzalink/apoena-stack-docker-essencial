@@ -10,6 +10,8 @@
 
 `docker logs <nome_do_container>`
 
+`docker run --name <nome_do_container> --network host <nome_da_imagem>`
+
 ## Prática - Bridged
 
 ```bash
@@ -34,4 +36,14 @@ docker run --name apoena-client --network apoena-network apoena-client
 
 ```bash
 docker logs apoena-server
+```
+
+## Prática - Host
+
+```bash
+docker build -t apoena-docker-client .
+```
+
+```bash
+docker run --name apoena-docker-client --network host apoena-docker-client
 ```
