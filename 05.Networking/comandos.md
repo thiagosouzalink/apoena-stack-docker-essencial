@@ -1,6 +1,6 @@
 # 05 - Networking
 
-## Comandos Sinatxe
+## Comandos Sintaxe
 
 `docker network create --driver bridge <nome_da_rede>`
 
